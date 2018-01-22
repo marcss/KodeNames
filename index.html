@@ -34,7 +34,12 @@
   <div id="board"></div>
   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
   <script type="text/javascript">
-  if (location.search.substr(1) != "spymaster=true") document.getElementById("spymaster").style.visibility = "hidden";
+  if (location.search.substr(1) === "spymaster=true") {
+    document.getElementById("spymaster").style.visibility = "visible";
+  }
+    else {
+    document.getElementById("spymaster").style.visibility = "hidden";
+  }
     function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-48676831-6'}, 'google_translate_element');
   }
